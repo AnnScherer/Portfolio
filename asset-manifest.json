@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/AnnScherer.github.io/final-project-react/static/css/main.31d6cfe0.css",
+    "main.js": "/AnnScherer.github.io/final-project-react/static/js/main.1b4c35f5.js",
+    "index.html": "/AnnScherer.github.io/final-project-react/index.html",
+    "main.1b4c35f5.js.map": "/AnnScherer.github.io/final-project-react/static/js/main.1b4c35f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.1b4c35f5.js"
+  ]
+}
