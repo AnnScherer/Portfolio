@@ -1,1 +1,174 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  background-color: #9be8eb;
+  position: relative;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+}
+
+.svg img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  min-height: 660px;
+  min-width: 350px;
+}
+
+.img {
+  background-image: url(./img.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-width: 480px;
+  min-height: 480px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1fb0b2;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+nav a.active {
+  border-bottom: 4px solid #ffffff;
+}
+
+section {
+  padding: 1rem 3rem;
+  height: 90vh;
+  overflow-y: scroll;
+  /* border: 1px solid black; */
+  position: relative;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin: 1.3rem 0 0.8rem 0;
+  font-family: "Dancing Script", cursive;
+  color: #1fb0b2;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: #6c6c6c;
+  padding-bottom: 8rem;
+}
+
+.text {
+  padding-bottom: 12rem;
+}
+
+.title {
+  text-align: center;
+}
+
+ion-icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.footer-child {
+  border-top: 4px solid #1fb0b2;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-child a {
+  padding: 0.5rem;
+}
+
+/* Tablet hochkant und Smartphone gedreht */
+@media screen and (min-width: 800px) {
+  nav {
+    justify-content: flex-end;
+    gap: 1.8rem;
+    padding: 2rem;
+  }
+  nav a {
+    font-size: 1.3rem;
+  }
+  section {
+    height: 85vh;
+  }
+  .img {
+    width: 300px;
+    min-height: 300px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .text {
+    padding: 0 5rem;
+    font-size: 1.3rem;
+  }
+  .svg{
+    height: 300px;
+  }
+}
+
+/* Tablet quer und Desktop */
+@media screen and (min-width: 1100px) {
+  section {
+    height: 80vh;
+  }
+  .svg {
+    width: 800px;
+  }
+}
