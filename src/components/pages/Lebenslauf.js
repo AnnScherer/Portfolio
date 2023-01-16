@@ -1,6 +1,7 @@
 const Lebenslauf = () => {
   return (
-      <div className="text">
+    <div className="text">
+      <div className="lebenslauf">
         <h1>Lebenslauf</h1>
         <h6>04/2022 - Heute</h6>
         <b>DCI Digital Career Institute GmbH in Berlin</b>
@@ -13,10 +14,8 @@ const Lebenslauf = () => {
         <h6>04/2019 – 10/2021 </h6>
         <b>Projektbezogenes Arbeiten</b>
         <p className="tätigkeit">Mediengestaltung Rüdiger R. Faller</p>
-        <ul>
-          <li>Printmedien</li>
-          <li>Textildruck</li>
-        </ul>
+        <p>- Printmedien</p>
+        <p>- Textildruck</p>
 
         <h6>10/2018 – 03/2019</h6>
         <b>Technische Universität Darmstadt</b>
@@ -32,6 +31,7 @@ const Lebenslauf = () => {
           Schulische Ausbildung zur gestaltungs- und medientechnischen
           Assistentin
         </p>
+      </div>
     </div>
   );
 };
