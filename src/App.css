@@ -288,6 +288,7 @@ a{
   }
   section {
     padding: 5rem 25rem 2rem 25rem;
+    overflow: scroll;
   }
   .container {
     grid-template-rows: 100px auto 320px;
