@@ -1,7 +1,16 @@
 const AboutMe = () => {
   return (
-    <>
-      <p className="text">
+    <div className="text">
+      <div className="header-aboutme">
+        <div className="title-aboutme">
+          <h1>Anyamani Scherer</h1>
+          <h3>Frontend Entwicklerin</h3>
+        </div>
+        <div className="img-aboutme-container">
+          <div className="img-aboutme"></div>
+        </div>
+      </div>
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas possimus
         hic necessitatibus voluptatum deleniti in distinctio. Amet praesentium
         accusantium eaque nesciunt maiores velit repudiandae quia maxime quaerat
@@ -26,8 +35,8 @@ const AboutMe = () => {
         nihil facere esse beatae consectetur vero ea mollitia, porro accusamus
         perferendis dolor dolorum. Commodi, tempora architecto?
       </p>
-    </>
+    </div>
   );
-}
- 
+};
+
 export default AboutMe;

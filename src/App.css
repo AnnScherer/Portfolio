@@ -27,12 +27,14 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
   position: relative;
   height: 100vh;
-  min-height: 660px;
-  min-width: 350px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto 300px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  min-height: 750px;
 }
 
 .img {
@@ -49,13 +51,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  min-width: 480px;
-  min-height: 480px;
+  height: 100%;
+}
+
+.nav-box {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 nav {
@@ -67,7 +67,7 @@ nav {
 nav a {
   text-decoration: none;
   color: #1fb0b2;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.3rem;
   cursor: pointer;
 }
 
@@ -77,10 +77,9 @@ nav a.active {
 
 section {
   padding: 1rem 3rem;
-  height: 90vh;
-  overflow-y: scroll;
   /* border: 1px solid black; */
-  position: relative;
+  grid-area: 2 / 1 / 3 / 2;
+  overflow: scroll;
 }
 
 h1 {
@@ -94,29 +93,32 @@ h3 {
   font-size: 1.3rem;
   font-weight: 100;
   color: #6c6c6c;
-  padding-bottom: 8rem;
 }
 
-.text {
-  padding-bottom: 12rem;
+h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .title {
   text-align: center;
 }
 
-ion-icon {
+a ion-icon {
+  color: #222222;
   font-size: 2rem;
   padding: 0.5rem;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  margin-top: 1rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+  grid-area: 3 / 1 / 4 / 2;
+  background-image: url(./hills.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
 }
 
 .footer-child {
@@ -125,24 +127,82 @@ ion-icon {
   display: flex;
   align-items: center;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
-.footer-child a {
-  padding: 0.5rem;
+.cloud1,
+.cloud2 {
+  display: none;
+}
+
+nav a:hover {
+  color: white;
+}
+
+h6 {
+  font-size: 1.2rem;
+  padding: 2rem 0 0.6rem 0;
+}
+
+.tätigkeit {
+  padding-top: 0.3rem;
+}
+
+ul li {
+  margin-left: 1rem;
+  line-height: 1.5rem;
+}
+
+.header-aboutme {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-bottom: 2rem;
+}
+
+.title-aboutme {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title-aboutme h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.title-aboutme h3 {
+  font-size: 1rem;
+}
+
+.img-aboutme-container {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.img-aboutme {
+  background-image: url(./img.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
 /* Tablet hochkant und Smartphone gedreht */
 @media screen and (min-width: 800px) {
   nav {
     justify-content: flex-end;
-    gap: 1.8rem;
+    gap: 3rem;
     padding: 2rem;
   }
   nav a {
     font-size: 1.3rem;
   }
   section {
-    height: 85vh;
+    padding: 4rem 6rem;
   }
   .img {
     width: 300px;
@@ -155,20 +215,65 @@ ion-icon {
     font-size: 1.5rem;
   }
   .text {
-    padding: 0 5rem;
     font-size: 1.3rem;
   }
-  .svg{
+  .svg {
     height: 300px;
+  }
+  .footer {
+    background-size: auto;
+  }
+  .title-aboutme h1 {
+    font-size: 3rem;
+  }
+  .title-aboutme h3 {
+    font-size: 1.5rem;
+  }
+  .img-aboutme {
+    width: 120px;
+    height: 120px;
   }
 }
 
 /* Tablet quer und Desktop */
 @media screen and (min-width: 1100px) {
-  section {
-    height: 80vh;
-  }
   .svg {
     width: 800px;
+  }
+  .cloud1,
+  .cloud2 {
+    display: block;
+    background-image: url(./cloud.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+  }
+  .cloud1 {
+    width: 190px;
+    height: 110px;
+    left: 5rem;
+    bottom: 25rem;
+  }
+  .cloud2 {
+    width: 170px;
+    height: 100px;
+    right: 5rem;
+    top: 15rem;
+  }
+  section {
+    padding: 5rem 25rem 2rem 25rem;
+  }
+  .container {
+    grid-template-rows: 100px auto 320px;
+  }
+  .title-aboutme h1 {
+    font-size: 2rem;
+  }
+  .title-aboutme h3 {
+    font-size: 1.5rem;
+  }
+  .img-aboutme {
+    width: 120px;
+    height: 120px;
   }
 }

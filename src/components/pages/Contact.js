@@ -2,9 +2,9 @@ const Contact = () => {
   return (
     <div className="text">
       <p>
-        Mobil: <a href="mailto:ann.hardt@gmx.de">0157 37733670</a>
+        Mobil: <a href="tel:+4915737733670">0157 37733670</a>
         <br />
-        Email: <a href="tel:+4915737733670">ann.hardt@gmx.de</a>
+        Email: <a href="mailto:anyamani.scherer@gmx.de">anyamani.scherer@gmx.de</a>
         <br />
         Geboren am 01.11.1996
       </p>
