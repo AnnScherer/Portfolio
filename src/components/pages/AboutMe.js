@@ -31,7 +31,7 @@ console.log(getAge(oBirthDay));
         <br />
         Ich bin aufgeschlossen, zuverlässig und detailverliebt. Das Elernen von
         Arbeitsaufträgen liegt mir besonders, die ich stets genau und ordentlich
-        bearbeite. Durch meine offene Art fällt es mir leicht in sowohl großen
+        bearbeite. Durch meine offene Art fällt es mir leicht in großen,
         als auch kleinen Gruppen zu arbeiten.
         <br />
         <br />
