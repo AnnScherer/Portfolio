@@ -30,7 +30,7 @@ console.log(getAge(oBirthDay));
         Leidenschaft nachgehen zu können. <br />
         <br />
         Ich bin aufgeschlossen, zuverlässig und detailverliebt. Das Elernen von
-        Arbeitsaufträgen liegt mir besonders, die ich stets genau und ordentlich
+        Arbeitsaufträgen liegt mir besonders, die ich stets genau und gewissenhaft
         bearbeite. Durch meine offene Art fällt es mir leicht in großen,
         als auch kleinen Gruppen zu arbeiten.
         <br />
