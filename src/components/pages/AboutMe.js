@@ -29,7 +29,7 @@ console.log(getAge(oBirthDay));
         Dingen. Die digitale Welt bietet mir unbegrenzte Möglichkeiten meiner
         Leidenschaft nachgehen zu können. <br />
         <br />
-        Ich bin aufgeschlossen, zuverlässig und detailverliebt. Das Elernen von
+        Ich bin aufgeschlossen, zuverlässig und detailverliebt. Das Erlernen von
         Arbeitsaufträgen liegt mir besonders, die ich stets genau und gewissenhaft
         bearbeite. Durch meine offene Art fällt es mir leicht in großen,
         als auch kleinen Gruppen zu arbeiten.
