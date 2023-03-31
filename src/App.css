@@ -185,7 +185,7 @@ h6 {
   border-radius: 50%;
 }
 
-.contact{
+.contact {
   width: fit-content;
   text-align: center;
 }
@@ -194,17 +194,17 @@ h6 {
   margin: 1rem;
 }
 
-.text{
+.text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.aboutme-text p{
+.aboutme-text p {
   line-height: 1.5rem;
 }
 
-a{
+a {
   color: #1fb0b2;
   text-decoration: none;
 }
@@ -251,9 +251,9 @@ a{
     width: 120px;
     height: 120px;
   }
-  .aboutme-text p{
-  line-height: 1.8rem;
-}
+  .aboutme-text p {
+    line-height: 1.8rem;
+  }
 }
 
 /* Tablet quer und Desktop */
@@ -287,7 +287,8 @@ a{
   }
   section {
     padding: 5rem 25rem 2rem 25rem;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .container {
     grid-template-rows: 100px auto 320px;
@@ -304,9 +305,8 @@ a{
   }
 }
 
-
-@media screen and (max-height: 900px){
-  .img{
+@media screen and (max-height: 900px) {
+  .img {
     max-width: 180px;
     max-height: 180px;
   }
