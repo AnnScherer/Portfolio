@@ -1,6 +1,6 @@
 {
-  "homepage": "https://AnnScherer.github.io/portfolio/",
-  "name": "portfolio",
+  "homepage": "https://AnnScherer.github.io/Portfolio/",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
