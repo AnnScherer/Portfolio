@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/final-project-react/static/css/main.db7f84d0.css",
-    "main.js": "/final-project-react/static/js/main.3b50a0cf.js",
-    "static/media/img.png": "/final-project-react/static/media/img.34d9103d1a099f23e0ef.png",
-    "static/media/hills.svg": "/final-project-react/static/media/hills.8dd451342d06c124b1dc.svg",
-    "static/media/cloud.svg": "/final-project-react/static/media/cloud.75c66fbfee0f7a89cb98.svg",
-    "index.html": "/final-project-react/index.html",
-    "main.db7f84d0.css.map": "/final-project-react/static/css/main.db7f84d0.css.map",
-    "main.3b50a0cf.js.map": "/final-project-react/static/js/main.3b50a0cf.js.map"
+    "main.css": "/Portfolio/static/css/main.1d83a721.css",
+    "main.js": "/Portfolio/static/js/main.3b50a0cf.js",
+    "static/media/img.png": "/Portfolio/static/media/img.34d9103d1a099f23e0ef.png",
+    "static/media/hills.svg": "/Portfolio/static/media/hills.8dd451342d06c124b1dc.svg",
+    "static/media/cloud.svg": "/Portfolio/static/media/cloud.75c66fbfee0f7a89cb98.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.1d83a721.css.map": "/Portfolio/static/css/main.1d83a721.css.map",
+    "main.3b50a0cf.js.map": "/Portfolio/static/js/main.3b50a0cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.db7f84d0.css",
+    "static/css/main.1d83a721.css",
     "static/js/main.3b50a0cf.js"
   ]
 }
